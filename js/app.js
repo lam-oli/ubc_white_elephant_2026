@@ -28,8 +28,8 @@ function renderHome(msg) {
   const outs = state.people.filter((p) => p.status === "out");
   const s = state.settings;
   app.innerHTML = `
-  <section class="card hero"><div class="hero-top"><img class="photo" src="images/santa.jpg" alt="Our Secret Santa host in festive tree glasses and a Santa hat"><div><h1>Secret Santa</h1><p class="gold">2026</p></div></div>
-    <p class="muted">Ho ho ho! Christmas is coming and it is time for our annual FoMDSWhite Elephant gift exchange! Please sign up below if you are interested in participating.</p></section>
+  <section class="card hero"><div class="hero-top"><img class="photo" src="images/santa.jpg" alt="Our Secret Santa host in festive tree glasses and a Santa hat"><div><h1>FoMDS White Elephant</h1><p class="gold">2026</p></div></div>
+    <p class="muted">Ho ho ho! Christmas is coming and it is time for our annual FoMDS White Elephant gift exchange. Please sign up below if you are interested in participating.</p></section>
   <section class="tiles">
     <div class="tile"><div class="ic">🎁</div><b>Current Elf Count</b><span>${ins.length} taking part</span></div>
     <div class="tile"><div class="ic">📅</div><b>Date</b><span>${esc(s.date)}</span></div>

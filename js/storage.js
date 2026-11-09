@@ -7,7 +7,7 @@ const STORAGE_KEY = "secretsanta:v2";
 const DEFAULTS = {
   people: [],            // [{ name: "Sam", status: "in" | "out" }]
   pairs: null,           // [{ giver, receiver }]
-  password: "noelnaveen26",
+  password: "noelnaveen26", 
   settings: { date: "Dec 20", budget: "$20", location: "Office, 1st floor" },
 };
 const fresh = () => JSON.parse(JSON.stringify(DEFAULTS));
