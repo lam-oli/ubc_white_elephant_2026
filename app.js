@@ -31,7 +31,7 @@ function renderHome(msg) {
   <section class="card hero"><div class="hero-top"><img class="photo" src="images/santa.jpg" alt="Our Secret Santa host in festive tree glasses and a Santa hat"><div><h1>Secret Santa</h1><p class="gold">2026</p></div></div>
     <p class="muted">Ho ho ho! Christmas is coming. Let us know if you’re in so we can sort out the gift draw.</p></section>
   <section class="tiles">
-    <div class="tile"><div class="ic">🎁</div><b>Gift buddy</b><span>${ins.length} taking part</span></div>
+    <div class="tile"><div class="ic">🎁</div><b>Elf Count</b><span>${ins.length} taking part</span></div>
     <div class="tile"><div class="ic">📅</div><b>Date</b><span>${esc(s.date)}</span></div>
     <div class="tile"><div class="ic">🧦</div><b>Budget</b><span>${esc(s.budget)}</span></div>
     <div class="tile"><div class="ic">📍</div><b>Location</b><span>${esc(s.location)}</span></div>
