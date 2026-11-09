@@ -29,14 +29,14 @@ function renderHome(msg) {
   const s = state.settings;
   app.innerHTML = `
   <section class="card hero"><div class="hero-top"><img class="photo" src="images/santa.jpg" alt="Our Secret Santa host in festive tree glasses and a Santa hat"><div><h1>Secret Santa</h1><p class="gold">2026</p></div></div>
-    <p class="muted">Ho ho ho! Christmas is coming. Let us know if you’re in so we can sort out the gift draw.</p></section>
+    <p class="muted">Ho ho ho! Christmas is coming and it is time for our annual FoMDSWhite Elephant gift exchange! Please sign up below if you are interested in participating.</p></section>
   <section class="tiles">
-    <div class="tile"><div class="ic">🎁</div><b>Elf Count</b><span>${ins.length} taking part</span></div>
+    <div class="tile"><div class="ic">🎁</div><b>Current Elf Count</b><span>${ins.length} taking part</span></div>
     <div class="tile"><div class="ic">📅</div><b>Date</b><span>${esc(s.date)}</span></div>
     <div class="tile"><div class="ic">🧦</div><b>Budget</b><span>${esc(s.budget)}</span></div>
     <div class="tile"><div class="ic">📍</div><b>Location</b><span>${esc(s.location)}</span></div>
   </section>
-  <section class="card"><h2>Are you in?</h2><p class="muted">Enter your name, then choose one. You can change your answer later with the same name.</p>
+  <section class="card"><h2>Are you in?</h2><p class="muted">Enter your name, then let us know if you are coming. You can change your answer later with the same name.</p>
     <form class="stack" id="rsvp"><input id="nm" placeholder="Your name" aria-label="Your name" maxlength="40" autocomplete="name">
     <div class="choice"><button type="button" class="yes" data-s="in">Yes, I’m in! 🎄</button><button type="button" class="no" data-s="out">Not This Year</button></div></form>
     <div class="msg" id="msg" role="status">${msg || ""}</div></section>
@@ -52,7 +52,7 @@ function renderHome(msg) {
       if (found) found.status = status; else state.people.push({ name, status });
       state.pairs = null;
       await persist();
-      renderHome(status === "in" ? `You’re in, ${esc(name)}! 🎁` : `Thanks for letting us know, ${esc(name)}. See you next year.`);
+      renderHome(status === "in" ? `You’re in, ${esc(name)}! 🎁` : `Thanks for letting us know, see you next year Mr. Grinch.`);
     };
   });
 }
